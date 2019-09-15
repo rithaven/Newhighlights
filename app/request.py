@@ -10,7 +10,7 @@ base_url = None
 def configure_request(app):
     global api_key,base_url
     api_key = app.config['SOURCES_API_KEY']
-    # print(ip_key)
+    print(ip_key)
     base_url = app.config['SOURCES_API_BASE_URL']
     base_url = app.config['ARTICLES_API_BASE_URL']
 
