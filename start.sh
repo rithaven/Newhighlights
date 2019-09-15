@@ -1,0 +1,4 @@
+export SOURCES_API_KEY='ddff26e502374e02aca82141982a349d'
+export SECRET_KEY='hhhghhddggsgg'
+
+python3.6 manager.py server

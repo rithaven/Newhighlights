@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+{% import 'macros.html' as macro%}
+<!-- Content block -->
+{% block content %}
+
+<!-- Sports News  section  -->
+<h3> Sports News</h3>
+<ul>
+  {{macro.displaysourceslist(sport)}}
+</ul>
+<!-- entertainments News  section  -->
+<h3>Entertainments News</h3>
+<ul>
+  {{macro.displaysourceslist(entertainment)}} 
+</ul>
+<!-- health News  section  -->
+<h3>Health News</h3>
+<ul>
+  {{macro.displaysourceslist(health)}} 
+</ul>
+<!-- Technology News  section  -->
+<h3>Technology News</h3>
+<ul>
+  {{macro.displaysourceslist(Technology)}} 
+</ul>
+<!-- Science News  section  -->
+<h3>Science News</h3>
+<ul>
+  {{macro.displaysourceslist(science)}}
+</ul>
+{% endblock%}
