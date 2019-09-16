@@ -23,9 +23,9 @@ def index():
 def Articles(id):
 
     '''
-    View news page function that returns the news details page and its data
+    View news page function that returns the news articles details page and its data
     '''
     Articles = get_Articles(id)
-    title = f'NH | {id}'
+    title = f'search result for {id}'
 
     return render_template('Articles.html',title = title,Articles = Articles)

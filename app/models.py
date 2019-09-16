@@ -4,7 +4,7 @@ class sources:
     '''
 
     def __init__(self,id,name,description,url,category,language,country):
-        self.id =id
+        self.id = id
         self.name = name
         self.description = description
         self.url = url
@@ -18,7 +18,7 @@ class Articles:
     '''
     Articles class to define articles objects
     '''
-    def __init__(self,id,name,author,title,description,url,urloImage,publishedAt,content):
+    def __init__(self,id,name,author,title,url,urlToImage,publishedAt,content):
         self.id = id
         self.name = name 
         self.author = author

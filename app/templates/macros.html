@@ -1,8 +1,7 @@
 {% macro displaysourcesList(sources_list) %}
 
-    {% for sources-row in sources_list |bacth(4)%}
+    {% for sources in sources_list %}
        <div class="row">
-           {% for sources in sources-row%}
                <div class="panel panel-default">
                    <div class="panel-heading">
                        <a href="/sources/{{sources.id}}">
@@ -16,7 +15,7 @@
                              <a href="/sources/{{sources.id}}" class="btn btn-success btn-sm">Visit {{sources.name}}</a>
                     </div>
                </div>
-            {% endfor %}
+          
                
         </div>
 

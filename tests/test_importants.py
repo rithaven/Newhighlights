@@ -1,5 +1,5 @@
 import unittest
-from app.models import sources
+from app.models import sources,Articles
 
 class sourcesTest(unittest.TestCase):
     '''
@@ -10,7 +10,7 @@ class sourcesTest(unittest.TestCase):
         '''
         Set up method that will run before every Test
         '''
-        self.new_sources = SOURCES(1234,'Python Must Be Crazy','A thrilling new Python Series','/khsjha27hbs',8.5,129993)
+        self.new_sources = sources(1234,'Python Must Be Crazy','A thrilling new Python Series','/khsjha27hbs',8.5,129993)
 
     def test_instance(self):
         self.assertTrue(isinstance(self.new_sources,sources))
