@@ -54,4 +54,24 @@ def process_results(sources_list):
             sources_results.append(sources_object)
 
 
-    return sources_results
+    # return sources_results
+def get_sources(id):
+    get_sources_details_url = base_url.format(id,api_key)
+
+    with urllib.request.urlopen(get_sources_details_url) as url:
+        sources_details_data = url.read()
+        sources_details_response = json.loads(sources_details_data)
+
+        sources_object = None
+        if sources_details_response:
+            id = sources_details_response.get('id')
+            name = sources_details_response.get('name')
+            description = sources_details_response.get('description')
+            url = sources_details_response.get('url')
+            category = sources_details_response.get('category')
+            language = sources_details_response.get('language')
+            country = sources_details_response.get('country')
+
+            sources_object = sources(id,name,description,url,category,language,country)
+
+    return sources_object

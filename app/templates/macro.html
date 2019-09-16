@@ -1,8 +1,8 @@
 {% macro displayMovieList(sources_list) %}
 
     {% for sources in sources_list %}
-        <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 movie-card">
-            <img src="{{ sources.name }}" alt="{{ sources.title }} poster" class="img-responsive">
+        <div class="col-xs-12 col-sm-4 col-md-2 col-lg-2 sources-card">
+            <img src="{{ sources.name }}" alt="{{ sources.title }} name" class="img-responsive">
             <li class="text-center">
                 <a href="/sources/{{sources.id}}">
                     {{ sources.title|truncate(10)}}</a>

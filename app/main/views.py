@@ -20,13 +20,13 @@ def index():
     title = 'Home - Welcome to The Newshight'
     return render_template('index.html', title = title,sports = sports_sources, entertainment = entertainment_sources, health = health_sources, technology = technology_sources,science = science_sources )
 
-@main.route('/Articles/<int:id>')
-def Articles(id):
+@main.route('/sources/<int:id>')
+def sources(id):
 
     '''
     View news page function that returns the news details page and its data
     '''
-    Articles = get_Articles(id)
-    title = f'Top articles'
+    sources = get_sources(id)
+    title = f'{sources.title}'
 
-    return render_template('index.html',title = title,Articles = Articles)
+    return render_template('sources.html',title = title,sources = sources)
