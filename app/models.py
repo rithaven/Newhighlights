@@ -15,7 +15,9 @@ class sources:
 
 
 class Articles:
-
+    '''
+    Articles class to define articles objects
+    '''
     def __init__(self,id,name,author,title,description,url,urloImage,publishedAt,content):
         self.id = id
         self.name = name 
