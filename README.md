@@ -1,4 +1,4 @@
-# [NewS highlights Application]
+# [NewS highlights Application](https://newshighlight1-k.herokuapp.com/)
 ## Decription
 
 This is a web site i did for the purpose of helping people  to view news from different sources(web sites) but through one web site. you can open this site and view different kinds of news you want
@@ -22,7 +22,22 @@ you need the following to start working on the project on your local computer:
 -Pip
 -virtual
 -A text Editor
+```
 
 ## Getting started
 * clone this repository to your local computer.
 * Ensure you have python3.6 installed in your computer.
+* from the terminal navigate to the cloned project folder.
+* create a virtual environment and access the folder via your virtual machine.
+```
+export NEWS_API_KEY='<YOUR-API-KEY>'
+python3.6 manage.py server
+```
+* Run```chmod +x start.sh```followed by ``` ./start.sh``` while in the project folder to start the project.
+* once started, the project can be accessed on your localhost using the address: ``` localhost:500``
+## Technologies Used
+* Python v3.6
+* Boostrap
+* Flask
+* API
+
