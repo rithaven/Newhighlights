@@ -40,4 +40,10 @@ python3.6 manage.py server
 * Boostrap
 * Flask
 * API
+## live site:
+https://newshighlight1-k.herokuapp.com/
+
+## License
+MIT License
+Copyright (c) 2019 Ritha KANKINDI VENERANDA
 
