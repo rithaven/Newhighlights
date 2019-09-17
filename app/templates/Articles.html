@@ -2,22 +2,20 @@
 <!-- Content block -->
 {% block content %}
 <div class="container">
-
-     <!-- News name background -->
+    <div class="row">
+        <!-- News name background -->
         <h3>Top Headlines</h3>
         {% for article in Articles %}
         
-        <div class="row"></div>
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 posterPath" style="background: url({{article.name}}) no-repeat center center">
-        </div>
 
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 news-details">
-            <a href="{{article.name}}" target="_blank">
+        <div class="col-md-3">
+            <div class="thumbnail">
+            <a href="{{article.url}}" target="_blank">
             
             <img src="{{article.urlToImage}}" alt="{{article.title}}" class="img-responsive" styles="height:30px">
             </a>
             <div class="caption">
-                <h3><a href="{{article.url}}" target="_blank">{{article.title}} </a></h3>
+                <h3><a href="{{article.url}}" target="_blank">{{article.title | truncate(35)}} </a></h3>
                 <p>{{article.content}} | truncate(80)}}</p>
                 <a href="{{article.url}}" target="_blank"> Read More</a>
 
@@ -26,7 +24,9 @@
                 Published at: {{article.publishedAt}}
 
             </div>
+            </div>
         </div>
+    
         {% endfor %}
     </div>
 
