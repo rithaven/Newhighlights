@@ -11,7 +11,7 @@ with the application, a user will be able to:
 
 ## Prerequisites
 
-you need the following to start working on the project on your local computer:
+You need the following to start working on the project on your local computer:
 
 * ubuntu operating system installed with the following:
 
