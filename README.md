@@ -34,7 +34,7 @@ export NEWS_API_KEY='<YOUR-API-KEY>'
 python3.6 manage.py server
 ```
 * Run```chmod +x start.sh```followed by ``` ./start.sh``` while in the project folder to start the project.
-* once started, the project can be accessed on your localhost using the address: ``` localhost:500``
+* once started, the project can be accessed on your localhost using the address: ``` localhost:500```
 ## Technologies Used
 * Python v3.6
 * Boostrap
