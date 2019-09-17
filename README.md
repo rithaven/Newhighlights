@@ -42,6 +42,8 @@ python3.6 manage.py server
 * API
 ## live site:
 https://newshighlight1-k.herokuapp.com/
+## For more info:
+contact veneruth4@gmail.com
 
 ## License
 MIT License
